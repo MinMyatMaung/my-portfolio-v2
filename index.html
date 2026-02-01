@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min Myat Maung | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="logo">Min Myat<br />Maung</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle">
+          <img id="theme-icon" src="icons/moon.png" alt="Toggle theme" />
+        </button>
+      </nav>
+    </header>
+    <hr />
+
+    <!-- Hero  -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Min Myat Maung</h1>
+          <br />
+          <p>
+            I’m a Computer Science student at California State University
+            Fullerton passionate about building practical, meaningful projects
+            and growing my skills through new technologies and hands-on
+            experience.
+          </p>
+        </div>
+        <div class="hero-media">
+          <img
+            src="Min_Myat_Maung_profile.JPG"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!-- About -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science student with a strong interest in full-stack
+        development and creating applications that solve real-world problems. I
+        enjoy working on projects that challenge me to think critically and
+        apply what I’ve learned in meaningful ways.
+      </p>
+      <br />
+      <p>
+        Through coursework, hackathons, and personal projects, I have gained
+        experience working with technologies such as JavaScript, React, Node.js,
+        and Python. I enjoy developing both frontend interfaces and backend
+        logic, and I like understanding how different parts of an application
+        work together. I am especially interested in full-stack development
+        because it allows me to see a project from concept to completion.
+      </p>
+      <br />
+      <p>
+        I believe that learning never stops in technology, and that is one of
+        the reasons why I love this field. I am actively seeking opportunities
+        to grow as a developer, collaborate with others, and apply my skills in
+        practical settings. My goal is to continue improving as a programmer
+        while contributing to projects that have a positive impact and provide
+        meaningful user experiences.
+      </p>
+    </section>
+    <hr />
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>PetMatch</h3>
+        <p>
+          A hackathon project with a MERN-based pet adoption website with
+          user-friendly interface. Implemented home page, pet profile page, user
+          profile page, and shelter profile page.
+        </p>
+        <p><strong>Tech Stack: </strong>MongoDB, Express.js, React, Node.js</p>
+        <a
+          href="https://github.com/freeCodeCamp-2025-Summer-Hackathon/yellow-packet"
+          target="_blank"
+          >GitHub</a
+        >
+      </div>
+
+      <div class="project-card">
+        <h3>Movie Review WebApp</h3>
+        <p>
+          A movie website that uses movie data from TMDB and lets users
+          create/read/update/delete reviews stored in MongoDB.
+        </p>
+        <p>
+          <strong>Tech Stack: </strong>HTML, CSS, JavaScript, Node.js, Express,
+          MongoDB, TMDB
+        </p>
+        <a
+          href="https://github.com/MinMyatMaung/movie-review-app"
+          target="_blank"
+          >GitHub</a
+        >
+      </div>
+
+      <div class="project-card">
+        <h3>Firebase Chat App</h3>
+        <p>
+          A real-time chat application built with React and Firebase that
+          supports a login with Google Authentication, message sending, and
+          dynamic message updates using Firestore.
+        </p>
+        <p><strong>Tech Stack: </strong>JavaScript, React, CSS, Firebase</p>
+        <a
+          href="https://github.com/MinMyatMaung/firebase_chat_app"
+          target="_blank"
+          >GitHub</a
+        >
+      </div>
+
+      <div class="project-card">
+        <h3>Telegram horoscope bot</h3>
+        <p>
+          A simple Telegram bot that delivers daily horoscopes to users based on
+          their zodiac sign and selected day (today, tomorrow, yesterday, or a
+          specific date). Built with Python, Telebot (pyTelegramBotAPI), and
+          deployed on Render to keep the bot alive.
+        </p>
+        <p><strong>Tech Stack: </strong>Python, pyTelegramBotAPI, Render</p>
+        <a href="https://github.com/MinMyatMaung/horoscope_bot" target="_blank"
+          >GitHub</a
+        >
+      </div>
+    </section>
+    <hr />
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="contact-inner">
+        <h2>Contact</h2>
+
+        <div class="contact-icons">
+          <a
+            href="mailto:rickyminmyatmaung@gmail.com"
+            target="_blank"
+            class="icon-btn"
+          >
+            <img src="icons/gmail.svg" alt="Gmail" />
+          </a>
+
+          <a
+            href="https://github.com/MinMyatMaung"
+            target="_blank"
+            class="icon-btn"
+          >
+            <img src="icons/github.svg" alt="GitHub" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/min-myat-maung/"
+            target="_blank"
+            class="icon-btn"
+          >
+            <img src="icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      const icon = document.getElementById("theme-icon");
+
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+
+        if (document.body.classList.contains("dark")) {
+          icon.src = "icons/sun.png";
+        } else {
+          icon.src = "icons/moon.png";
+        }
+      });
+    </script>
+  </body>
+</html>
