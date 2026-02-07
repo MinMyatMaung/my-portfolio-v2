@@ -117,14 +117,6 @@ h2 {
   margin-bottom: 32px;
 }
 
-/* About */
-
-/* .about {
-    padding-left: 100px;
-    padding-right: 100px;
-    line-height: 1.6;
-} */
-
 .about {
   max-width: 1050px;
   margin-left: auto;
@@ -133,8 +125,6 @@ h2 {
   font-size: 1.05rem;
   opacity: 0.95;
 }
-
-
 
 /* PROJECTS */
 .projects {
@@ -148,14 +138,6 @@ h2 {
 
 .projects h2 {
   grid-column: 1 / -1;
-}
-
-.project-card {
-  border: 2px solid black;
-  border-radius: 16px;
-  padding: 20px;
-  background: transparent;
-  transition: transform 0.2s ease;
 }
 
 .project-card {
