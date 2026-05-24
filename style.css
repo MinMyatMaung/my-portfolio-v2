@@ -73,6 +73,10 @@ body.dark .project-card {
   border-color: #f6f4ef;
 }
 
+body.dark .project-card a {
+  color:#f6f4ef;
+}
+
 /* HERO */
 .hero {
   min-height: 50vh;
