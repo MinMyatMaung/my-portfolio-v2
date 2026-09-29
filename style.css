@@ -245,6 +245,10 @@ body.dark .icon-btn:hover {
   background: #f6f4ef;
 }
 
+body.dark .skill-badges span {
+  border-color: #f6f4ef;
+}
+
 /* Click effect */
 .icon-btn:active {
   transform: scale(1.05);
@@ -286,4 +290,30 @@ body.dark .icon-btn:hover {
   .hero-inner {
   gap: 40px;
 }
+}
+
+/* Skill badges */
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.skill-badges span {
+  border: 2px solid black;
+  border-radius: 16px;
+  padding: 7px 12px;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+}
+
+.skill-badges span:hover {
+  transform: translateY(-2px);
+}
+
+/* Space between cyber and software projects */
+.section-subheading {
+  width: 100%;
+  margin-top: 50px;
 }

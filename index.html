@@ -12,31 +12,36 @@
       <!-- Navbar -->
       <nav class="navbar">
         <div class="logo">Min Myat<br />Maung</div>
+
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+
         <button id="theme-toggle" class="theme-toggle">
           <img id="theme-icon" src="icons/moon.png" alt="Toggle theme" />
         </button>
       </nav>
     </header>
+
     <hr />
 
-    <!-- Hero  -->
+    <!-- Hero -->
     <section class="hero">
       <div class="hero-inner">
         <div class="hero-text">
           <h1>Min Myat Maung</h1>
           <br />
+
           <p>
-            I’m a Computer Science student at California State University
-            Fullerton passionate about building practical, meaningful projects
-            and growing my skills through new technologies and hands-on
-            experience.
+            Computer Science student at California State University, Fullerton
+            focused on cybersecurity, IT infrastructure, and security
+            operations, with additional experience in full-stack development.
           </p>
         </div>
+
         <div class="hero-media">
           <img
             src="Min_Myat_Maung_profile.JPG"
@@ -46,153 +51,257 @@
         </div>
       </div>
     </section>
+
     <hr />
 
     <!-- About -->
     <section id="about" class="about">
       <h2>About Me</h2>
+
       <p>
-        I am a Computer Science student with a strong interest in full-stack
-        development and creating applications that solve real-world problems. I
-        enjoy working on projects that challenge me to think critically and
-        apply what I’ve learned in meaningful ways.
+        I am a Computer Science student interested in cybersecurity, IT
+        infrastructure, and security operations. I enjoy building hands-on labs
+        involving SIEM monitoring, Active Directory, network analysis, Windows
+        security, and malware analysis.
       </p>
+
       <br />
+
       <p>
-        Through coursework, hackathons, and personal projects, I have gained
-        experience working with technologies such as JavaScript, React, Node.js,
-        and Python. I enjoy developing both frontend interfaces and backend
-        logic, and I like understanding how different parts of an application
-        work together. I am especially interested in full-stack development
-        because it allows me to see a project from concept to completion.
-      </p>
-      <br />
-      <p>
-        I believe that learning never stops in technology, and that is one of
-        the reasons why I love this field. I am actively seeking opportunities
-        to grow as a developer, collaborate with others, and apply my skills in
-        the real world. My goal is to continue improving as a programmer while
-        contributing to projects that have a positive impact and provide
-        meaningful experiences.
+        I hold the CompTIA Security+ certification and continue developing my
+        skills through cybersecurity projects and TryHackMe. I also have
+        experience in full-stack development using React, Node.js, Python, and
+        databases.
       </p>
     </section>
+
+    <hr />
+
+    <!-- Skills -->
+    <section id="skills" class="projects">
+      <h2>Skills & Certifications</h2>
+
+      <div class="project-card">
+        <h3>🛡️ Cybersecurity & IT</h3>
+
+        <p><strong>Certification:</strong> CompTIA Security+</p>
+
+        <p><strong>Training:</strong> TryHackMe</p>
+        <br />
+        <div class="skill-group">
+          <h4>Security Tools</h4>
+          <div class="skill-badges">
+            <span>Wazuh SIEM</span>
+            <span>Wireshark</span>
+            <span>Nmap</span>
+            <span>REMnux</span>
+            <span>System Informer</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Systems & Infrastructure</h4>
+          <div class="skill-badges">
+            <span>Active Directory</span>
+            <span>Windows Server</span>
+            <span>Linux</span>
+            <span>Kali Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Scripting & Virtualization</h4>
+          <div class="skill-badges">
+            <span>PowerShell</span>
+            <span>VMware</span>
+            <span>VirtualBox</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>💻 Software Engineering</h3>
+
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="skill-badges">
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>Java</span>
+            <span>C++</span>
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Frameworks & Libraries</h4>
+          <div class="skill-badges">
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Databases & Backend Services</h4>
+          <div class="skill-badges">
+            <span>MongoDB</span>
+            <span>PostgreSQL</span>
+            <span>MySQL</span>
+            <span>Firebase</span>
+            <span>Supabase</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Development Tools</h4>
+          <div class="skill-badges">
+            <span>Git</span>
+            <span>GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <hr />
 
     <!-- Projects -->
     <section id="projects" class="projects">
-      <h2>Projects</h2>
+      <!-- Cybersecurity Projects -->
+      <h2>Cybersecurity Projects</h2>
+
+      <div class="project-card">
+        <h3>🛡️ Wazuh SIEM Home Lab</h3>
+
+        <p>
+          Built a SOC-style environment to monitor Windows endpoints and Active
+          Directory, simulate security events, and investigate authentication
+          and Windows security alerts.
+        </p>
+
+        <p>
+          <strong>Tech Stack:</strong>
+          Wazuh, Windows Server 2025, Active Directory, Windows 11, VMware
+        </p>
+
+        <a
+          href="https://github.com/MinMyatMaung/wazuh-siem-home-lab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View GitHub
+        </a>
+      </div>
+
+      <div class="project-card">
+        <h3>🦠 Malware Analysis Lab</h3>
+
+        <p>
+          Built an isolated environment for static and dynamic malware analysis,
+          including investigation of processes, files, registry activity, and
+          network traffic.
+        </p>
+
+        <p>
+          <strong>Tech Stack:</strong>
+          Windows 10, REMnux, Wireshark, System Informer, VirusTotal, VirtualBox
+        </p>
+      </div>
+
+      <!-- Software Projects -->
+      <h2 class="section-subheading">Software Engineering Projects</h2>
 
       <div class="project-card">
         <h3>PC Builder</h3>
+
         <p>
-          A full-stack PC building platform that generates compatible custom PC
-          builds using React, Node.js, and PostgreSQL with automated hardware
-          compatibility validation.
+          Team-built full-stack platform that generates compatible custom PC
+          builds with automated hardware compatibility validation.
         </p>
+
         <p>
-          <strong>Tech Stack: </strong>React, Node.js, Express, PostgreSQL,
-          Vitest, Jest, GitHub Actions
+          <strong>Tech Stack:</strong>
+          React, Node.js, Express, PostgreSQL, Vitest, Jest, GitHub Actions
         </p>
-        <a href="https://github.com/MinMyatMaung/coach-app" target="_blank"
-          >View GitHub</a
+
+        <a
+          href="https://github.com/dimmittkeelan/CPSC491-CapstoneProject"
+          target="_blank"
+          rel="noopener noreferrer"
         >
+          View GitHub
+        </a>
       </div>
 
       <div class="project-card">
         <h3>AI Coach App</h3>
-        <p>
-          An AI-powered sports coaching platform that automates training session
-          bookings and scheduling through WhatsApp messaging using Next.js,
-          Supabase, Twilio, and Claude AI.
-        </p>
-        <p>
-          <strong>Tech Stack: </strong>Next.js, TypeScript, Supabase, Twilio,
-          Claude AI
-        </p>
-        <a href="https://github.com/MinMyatMaung/coach-app" target="_blank"
-          >View GitHub</a
-        >
-      </div>
 
-      <div class="project-card">
-        <h3>FinalTake</h3>
         <p>
-          A full-stack social media review platform where users can create
-          profiles, share reviews, and manage personalized content through a
-          React and Flask-based web application.
+          AI-powered sports coaching platform that automates training session
+          bookings and scheduling through WhatsApp messaging.
         </p>
+
         <p>
-          <strong>Tech Stack: </strong>React, Flask, SQLite, Python, Vercel,
-          Render
+          <strong>Tech Stack:</strong>
+          Next.js, TypeScript, Supabase, Twilio
         </p>
+
         <a
-          href="https://github.com/MinMyatMaung/Cs491-FinalTake"
+          href="https://github.com/MinMyatMaung/coach-app"
           target="_blank"
-          >View GitHub</a
+          rel="noopener noreferrer"
         >
+          View GitHub
+        </a>
       </div>
 
       <div class="project-card">
         <h3>PetMatch</h3>
+
         <p>
-          A hackathon project with a MERN-based pet adoption website with
-          user-friendly interface. Implemented home page, pet profile page, user
-          profile page, and shelter profile page.
+          Hackathon-built MERN pet adoption platform with pet, user, and shelter
+          profile pages.
         </p>
-        <p><strong>Tech Stack: </strong>MongoDB, Express.js, React, Node.js</p>
+
+        <p>
+          <strong>Tech Stack:</strong>
+          MongoDB, Express.js, React, Node.js
+        </p>
+
         <a
           href="https://github.com/freeCodeCamp-2025-Summer-Hackathon/yellow-packet"
           target="_blank"
-          >View GitHub</a
+          rel="noopener noreferrer"
         >
+          View GitHub
+        </a>
       </div>
 
       <div class="project-card">
-        <h3>Movie Review WebApp</h3>
+        <h3>Movie Review Web App</h3>
+
         <p>
-          A movie website that uses movie data from TMDB and lets users
-          create/read/update/delete reviews stored in MongoDB.
+          Full-stack movie application using TMDB data where users can create,
+          read, update, and delete reviews stored in MongoDB.
         </p>
+
         <p>
-          <strong>Tech Stack: </strong>HTML, CSS, JavaScript, Node.js, Express,
-          MongoDB, TMDB
+          <strong>Tech Stack:</strong>
+          HTML, CSS, JavaScript, Node.js, Express, MongoDB, TMDB
         </p>
+
         <a
           href="https://github.com/MinMyatMaung/movie-review-app"
           target="_blank"
-          >View GitHub</a
+          rel="noopener noreferrer"
         >
-      </div>
-
-      <div class="project-card">
-        <h3>Firebase Chat App</h3>
-        <p>
-          A real-time chat application built with React and Firebase that
-          supports a login with Google Authentication, message sending, and
-          dynamic message updates using Firestore.
-        </p>
-        <p><strong>Tech Stack: </strong>JavaScript, React, CSS, Firebase</p>
-        <a
-          href="https://github.com/MinMyatMaung/firebase_chat_app"
-          target="_blank"
-          >View GitHub</a
-        >
-      </div>
-
-      <div class="project-card">
-        <h3>Telegram horoscope bot</h3>
-        <p>
-          A simple Telegram bot that delivers daily horoscopes to users based on
-          their zodiac sign and selected day (today, tomorrow, yesterday, or a
-          specific date). Built with Python, Telebot (pyTelegramBotAPI), and
-          deployed on Render to keep the bot alive.
-        </p>
-        <p><strong>Tech Stack: </strong>Python, pyTelegramBotAPI, Render</p>
-        <a href="https://github.com/MinMyatMaung/horoscope_bot" target="_blank"
-          >View GitHub</a
-        >
+          View GitHub
+        </a>
       </div>
     </section>
+
     <hr />
 
     <!-- Contact -->
@@ -201,17 +310,14 @@
         <h2>Contact</h2>
 
         <div class="contact-icons">
-          <a
-            href="mailto:rickyminmyatmaung@gmail.com"
-            target="_blank"
-            class="icon-btn"
-          >
+          <a href="mailto:rickyminmyatmaung@gmail.com" class="icon-btn">
             <img src="icons/gmail.svg" alt="Gmail" />
           </a>
 
           <a
             href="https://github.com/MinMyatMaung"
             target="_blank"
+            rel="noopener noreferrer"
             class="icon-btn"
           >
             <img src="icons/github.svg" alt="GitHub" />
@@ -220,6 +326,7 @@
           <a
             href="https://www.linkedin.com/in/min-myat-maung/"
             target="_blank"
+            rel="noopener noreferrer"
             class="icon-btn"
           >
             <img src="icons/linkedin.svg" alt="LinkedIn" />
@@ -227,6 +334,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Theme Toggle -->
     <script>
       const toggleBtn = document.getElementById("theme-toggle");
       const icon = document.getElementById("theme-icon");
